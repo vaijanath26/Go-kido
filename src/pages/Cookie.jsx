@@ -1,5 +1,5 @@
 import React from "react";
-import "./cookie.css";
+import "./Cookie.css";
 
 const Cookie = () => {
   return (
