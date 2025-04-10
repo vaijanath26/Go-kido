@@ -13,7 +13,7 @@ import GokidoTool from './pages/GokidoTool.jsx';
 import Login from './pages/Login.jsx';
 import Imprint from './pages/Imprint.jsx';
 import Conditions from './pages/Conditions.jsx';
-import Cookie from './pages/cookie.jsx';
+import Cookie from './pages/Cookie.jsx';
 import Faq from './pages/Faq.jsx';
 import Privacy from './pages/Privacy.jsx';
 
