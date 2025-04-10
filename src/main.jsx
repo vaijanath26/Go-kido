@@ -11,7 +11,7 @@ import City from './pages/City.jsx';
 import Partner from './pages/Partner.jsx';
 import GokidoTool from './pages/GokidoTool.jsx';
 import Login from './pages/Login.jsx';
-import Imprint from './pages/imprint.jsx';
+import Imprint from './pages/Imprint.jsx';
 import Conditions from './pages/Conditions.jsx';
 import Cookie from './pages/cookie.jsx';
 import Faq from './pages/Faq.jsx';
