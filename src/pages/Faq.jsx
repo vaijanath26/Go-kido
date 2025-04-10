@@ -1,5 +1,5 @@
 import React from "react";
-import "./FAQ.css"; // global styling
+import "./Faq.css"; // global styling
 
 const faqsGeneral = [
   {
