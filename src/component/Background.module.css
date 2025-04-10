@@ -1,0 +1,49 @@
+.hero {
+   height: 100vh; /* Full viewport height */
+   background: #E1FD94 url('../assets/hero5.png') no-repeat center center; /* Set background color + image */
+   background-size: cover; /* Ensures the image covers the entire section */
+   display: flex;
+   flex-direction: column; /* Stack elements one below the other */
+   justify-content: center; /* Center vertically */
+   align-items: flex-start; /* Align all content to the left */
+   text-align: left;
+   padding-left: 100px; /* Add some space from the left edge */
+   gap: 0px; /* Adds space between elements */
+}
+
+
+button {
+   padding: 10px 26px;
+   font-size: 0.9rem;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   background: linear-gradient(to right, #bee25a, #357135);
+   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+   transition: all 0.3s ease-in-out;
+}
+/* Main heading */
+.para {
+   color: #367337;
+   font-size: 50px;
+   font-weight: bold;
+   margin: 0;
+}
+
+/* Subheading */
+.subheading h2 {
+   color: #367337;
+   font-size: 24px;
+   margin: 0;
+}
+
+/* Input field */
+.inputField {
+   width: 300px;
+   padding: 10px;
+   font-size: 16px;
+   border: 2px solid #367337;
+   border-radius: 5px;
+   outline: none;
+   text-align: left;
+}

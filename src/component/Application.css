@@ -1,0 +1,38 @@
+/* App Download Section */
+
+
+.app-download {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f7f6; 
+    margin-top: 50px; 
+}
+
+/* Heading Styling */
+.app-download h2 {
+    color: #367337;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Buttons Wrapper */
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Space between buttons */
+}
+
+/* Button Images */
+.app-buttons img {
+    width: 350px; /* Adjust size for button images */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.app-buttons img:hover {
+    transform: scale(1.1);
+}
