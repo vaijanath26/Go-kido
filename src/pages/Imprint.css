@@ -1,57 +1,41 @@
-/* Fullscreen Hero Section */
+/* Imprint Hero Section */
 .abcd {
   position: relative;
   width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-}
-
-/* Background Image */
-.abcd::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url('../assets/imprintbg.jpg');/* <- UPDATED PATH */
+  height: 500px;
+  background-image: url('../assets/imprintbg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: brightness(30%);
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
 }
 
-/* Optional overlay for extra darkness */
-.abcd .overlay {
+.overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
-/* Centered title */
 .abcd h1 {
   position: relative;
   z-index: 2;
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
-  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-
-/* Imprint Content Section */
+/* Imprint Container */
 .imprint-container {
   max-width: 90%;
   margin: 4rem auto;
-  padding: 1rem;
+  padding: 0 1rem;
   font-size: 0.875rem;
   color: #1f2937;
   background-color: #fff;
@@ -59,22 +43,44 @@
   line-height: 1.6;
 }
 
-.imprint-section {
-  margin-bottom: 2rem;
-}
-
+/* Section Headings */
 .imprint-section h2 {
-  font-weight: 600;
   font-size: 0.875rem;
+  font-weight: 600;
+  margin-top: 2rem;
   margin-bottom: 0.5rem;
+  color: #111827;
 }
 
+/* Divider */
 .imprint-divider {
-  border-top: 1px solid #e5e7eb;
   padding-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
+/* Paragraphs */
+.imprint-divider p {
+  margin-bottom: 0.75rem;
+}
+
+/* Email Link */
 .imprint-link {
   color: #2563eb;
   text-decoration: underline;
+  word-break: break-word;
+}
+
+.imprint-link:hover {
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .abcd h1 {
+    font-size: 2rem;
+  }
+
+  .imprint-container {
+    padding: 0 1rem;
+  }
 }

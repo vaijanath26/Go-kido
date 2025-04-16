@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import  "./Partner.css";
 import p1 from "../assets/images/p1.png";
 import p2 from "../assets/images/p2.png";
@@ -57,6 +58,7 @@ import p53 from "../assets/images/p53.png";
 
 const partners = [
   {
+    id: "1",
     name: "Lindbergh’s Cafe",
     address: "Amelia-Mary-Earhart-Straße 8",
     status: "open",
@@ -65,6 +67,7 @@ const partners = [
     image: p1,
   },
   {
+    id: "2",
     name: "The Loft Fitness & Health Club",
     address: "Homburger Straße 76-78, 61118 Bad Vilbel",
     status: "open",
@@ -73,6 +76,7 @@ const partners = [
     image: p2,
   },
   {
+    id: "3",
     name: "Sushiko",
     address: "Schweizer Str. 61",
     status: "closed",
@@ -81,6 +85,7 @@ const partners = [
     image: p3,
   },
   {
+    id: "4",
     name: "Takahumi Sushi",
     address: "An der Hauptwache 7",
     status: "closed",
@@ -507,69 +512,69 @@ export default function PartnerPage() {
     activeService === "All"
       ? partners
       : partners.filter((p) => p.services.includes(activeService));
-      
 
   return (
     <>
-    <div className="abc">
-    <h1>53 Partner</h1>
-    </div>
-    
-    <div className="partner-wrapper">
-      <div className="partner-filters">
-    
-{["All", "Delivery", "Takeaway"].map((opt) => (
-          <label
-            key={opt}
-            className={`radio-btn ${activeService === opt ? "active" : ""}`}
-          >
-            <input
-              type="radio"
-              name="service"
-              value={opt}
-              checked={activeService === opt}
-              onChange={() => setActiveService(opt)}
-            />
-            {opt}
-          </label>
-        ))}
+      <div className="abc">
+        <h1>53 Partner</h1>
       </div>
-
-      <div className="partner-banner">
-        <span>
-          Select from 1000+ healthy menu items and have it ordered in our
-          zero-waste boxes.
-        </span>
-        <span className="partner-icon">🚴‍♂️</span>
-      </div>
-
-      <div className="partner-cards">
-        {filteredPartners.map((p, idx) => (
-          <div className="partner-card" key={idx}>
-            <img src={p.image} alt={p.name} className="partner-img" />
-            <div className="partner-tag">{p.cuisine.join(",")}</div>
-            <div
-              className={`partner-status ${
-                p.status === "open" ? "open" : "closed"
-              }`}
+    
+      <div className="partner-wrapper">
+        <div className="partner-filters">
+          {["All", "Delivery", "Takeaway"].map((opt) => (
+            <label
+              key={opt}
+              className={`radio-btn ${activeService === opt ? "active" : ""}`}
             >
-              {p.status === "open" ? "open" : "Geschlossen"}
-            </div>
-            <div className="partner-info">
-              <h3>{p.name}</h3>
-              <p>{p.address}</p>
-            </div>
-            <div className="partner-options">
-              {p.services.map((s, i) => (
-                <span key={i}>
-                  {s === "Delivery" ? "🚴‍♂️" : "🛍️"} {s}
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
+              <input
+                type="radio"
+                name="service"
+                value={opt}
+                checked={activeService === opt}
+                onChange={() => setActiveService(opt)}
+              />
+              {opt}
+            </label>
+          ))}
+        </div>
+
+        <div className="partner-banner">
+          <span>
+            Select from 1000+ healthy menu items and have it ordered in our
+            zero-waste boxes.
+          </span>
+          <span className="partner-icon">🚴‍♂️</span>
+        </div>
+
+        <div className="partner-cards">
+          {filteredPartners.map((p, idx) => (
+            <Link to={`/partner/${p.id}`} key={idx} className="partner-card-link">
+              <div className="partner-card">
+                <img src={p.image} alt={p.name} className="partner-img" />
+                <div className="partner-tag">{p.cuisine.join(",")}</div>
+                <div
+                  className={`partner-status ${
+                    p.status === "open" ? "open" : "closed"
+                  }`}
+                >
+                  {p.status === "open" ? "open" : "Geschlossen"}
+                </div>
+                <div className="partner-info">
+                  <h3>{p.name}</h3>
+                  <p>{p.address}</p>
+                </div>
+                <div className="partner-options">
+                  {p.services.map((s, i) => (
+                    <span key={i}>
+                      {s === "Delivery" ? "🚴‍♂️" : "🛍️"} {s}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
     </>
   );
 }

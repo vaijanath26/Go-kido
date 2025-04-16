@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react';
+import LoginModal from './LoginModal'; // Replace with the correct path
 
 const App = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const [showLogin, setShowLogin] = useState(false);
 
-export default App
+  return (
+    <>
+      <div>
+        <button onClick={() => setShowLogin(true)}>Log In</button>
+        <LoginModal isOpen={showLogin} onClose={() => setShowLogin(false)} />
+      </div>
+    </>
+  );
+};
+
+export default App;

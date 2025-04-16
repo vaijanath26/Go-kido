@@ -1,0 +1,179 @@
+/* styles.css */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+  }
+  
+  .container {
+    padding: 24px;
+  }
+  
+  .button {
+    padding: 10px 24px;
+    border-radius: 9999px;
+    font-weight: 600;
+  }
+  
+  .button-selected {
+    background-color: #86efac;
+    color: #164e41;
+  }
+  
+  .button-default {
+    background-color: #ffffff;
+    color: #4b5563;
+    border: 1px solid #d1d5db;
+  }
+  
+  .card {
+    background-color: #d1fae5;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 224px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #164e41;
+  }
+  
+  .card-price {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+  
+  .card-button {
+    margin-top: 8px;
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+  }
+  
+  .card-button .info-btn,
+  .card-button .add-btn {
+    background-color: #1f2937;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+  }
+  
+  .sidebar {
+    width: 33.33%;
+    padding: 16px;
+  }
+  
+  .sidebar-header {
+    background-color: #16a34a;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 8px;
+  }
+  
+  .sidebar-body {
+    background-color: #d1fae5;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .total {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  
+  .radio-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 16px;
+  }
+  
+  .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .radio-input {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .order-btn {
+    width: 100%;
+    background: linear-gradient(to right, #a3e635, #16a34a);
+    color: white;
+    padding: 12px;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .partner-detail-header {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  .partner-detail-image {
+    width: 192px;
+    height: 192px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 16px;
+  }
+  
+  .partner-detail-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #164e41;
+  }
+  
+  .partner-detail-address {
+    color: #4b5563;
+    font-size: 1rem;
+  }
+  
+  .partner-status {
+    margin-top: 8px;
+    font-size: 0.875rem;
+    color: #16a34a;
+  }
+  
+  .partner-services {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+  
+  .partner-services span {
+    background-color: #86efac;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    font-size: 1rem;
+    color: #164e41;
+  }
+  
+  .partner-services span::before {
+    content: " ";
+    margin-right: 8px;
+  }
+  
+  .partner-services .delivery::before {
+    content: "🚴‍♂️";
+  }
+  
+  .partner-services .pickup::before {
+    content: "🛍️";
+  }
+  

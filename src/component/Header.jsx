@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom"; // Import NavLink
 import styles from "./Header.module.css"; // Import CSS module
 import logo from '../assets/logo-new.svg';
@@ -7,6 +6,7 @@ import logo from '../assets/logo-new.svg';
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -16,8 +16,16 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles["header-container"]}>
         <div className={styles.logo}>
           <Link to="/">
@@ -44,56 +52,24 @@ const Header = () => {
         </button>
 
         <nav className={`${styles["nav-menu"]} ${isMobileMenuOpen ? styles.active : ""}`}>
-          {/* CITY Link */}
           <div className={styles["dropdown"]}>
             <NavLink to="/city" className={styles["nav-link"]} activeClassName={styles.active}>
               CITY
             </NavLink>
-            {/* Dropdown Menu for Cities */}
             <ul className={styles["dropdown-menu"]}>
-              <li>
-                <NavLink to="/city/BAD VILBEL" className={styles["dropdown-item"]} activeClassName={styles.active}>
-                  BAD VILBEL
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/city/HANAU" className={styles["dropdown-item"]} activeClassName={styles.active}>
-                  HANAU
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/city/MAINZ" className={styles["dropdown-item"]} activeClassName={styles.active}>
-                  MAINZ
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/city/BAD NAUHEIM" className={styles["dropdown-item"]} activeClassName={styles.active}>
-                  BAD NAUHEIM
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/city/FRANKFURT AM MAIN" className={styles["dropdown-item"]} activeClassName={styles.active}>
-                  FRANKFURT AM MAIN
-                </NavLink>
-              </li>
+              <li><NavLink to="/city/BAD VILBEL" className={styles["dropdown-item"]} activeClassName={styles.active}>BAD VILBEL</NavLink></li>
+              <li><NavLink to="/city/HANAU" className={styles["dropdown-item"]} activeClassName={styles.active}>HANAU</NavLink></li>
+              <li><NavLink to="/city/MAINZ" className={styles["dropdown-item"]} activeClassName={styles.active}>MAINZ</NavLink></li>
+              <li><NavLink to="/city/BAD NAUHEIM" className={styles["dropdown-item"]} activeClassName={styles.active}>BAD NAUHEIM</NavLink></li>
+              <li><NavLink to="/city/FRANKFURT AM MAIN" className={styles["dropdown-item"]} activeClassName={styles.active}>FRANKFURT AM MAIN</NavLink></li>
             </ul>
           </div>
 
-          {/* Other Navigation Links */}
-          <NavLink to="/partner" className={styles["nav-link"]} activeClassName={styles.active}>
-            PARTNER
-          </NavLink>
-          <NavLink to="/about" className={styles["nav-link"]} activeClassName={styles.active}>
-            ABOUT US
-          </NavLink>
-          <NavLink to="/gokido-tool" className={styles["nav-link"]} activeClassName={styles.active}>
-            GOKIDO TOOL
-          </NavLink>
-          <NavLink to="/contact" className={styles["nav-link"]} activeClassName={styles.active}>
-            CONTACT
-          </NavLink>
+          <NavLink to="/partner" className={styles["nav-link"]} activeClassName={styles.active}>PARTNER</NavLink>
+          <NavLink to="/about" className={styles["nav-link"]} activeClassName={styles.active}>ABOUT US</NavLink>
+          <NavLink to="/gokido-tool" className={styles["nav-link"]} activeClassName={styles.active}>GOKIDO TOOL</NavLink>
+          <NavLink to="/contact" className={styles["nav-link"]} activeClassName={styles.active}>CONTACT</NavLink>
 
-          {/* Language Selector */}
           <div className={styles["language-selector"]}>
             <button className={styles["language-button"]} onClick={toggleDropdown}>
               German (DE)
@@ -115,21 +91,14 @@ const Header = () => {
 
             {isDropdownOpen && (
               <div className={styles["language-dropdown"]}>
-                <NavLink to="#" className={styles["dropdown-item"]} activeClassName={styles.active}>
-                  English (EN)
-                </NavLink>
-                <NavLink to="#" className={styles["dropdown-item"]} activeClassName={styles.active}>
-                  German (DE)
-                </NavLink>
+                <NavLink to="#" className={styles["dropdown-item"]} activeClassName={styles.active}>English (EN)</NavLink>
+                <NavLink to="#" className={styles["dropdown-item"]} activeClassName={styles.active}>German (DE)</NavLink>
               </div>
             )}
           </div>
 
-          {/* Login Button */}
-          <NavLink to="/login" className={styles["login-button"]} activeClassName={styles.active}>
-            Log in
-          </NavLink>
-        </nav>
+          <NavLink to="/login" className={styles["login-button"]} activeClassName={styles.active}>Log in</NavLink>
+        </nav> 
       </div>
     </header>
   );

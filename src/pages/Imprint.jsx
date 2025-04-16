@@ -8,6 +8,7 @@ const Imprint = () => {
         <div className="overlay"></div>
         <h1>Imprint</h1>
       </div>
+      
 
       <div className="imprint-container">
         <div className="imprint-section">
