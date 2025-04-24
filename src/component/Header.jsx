@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom"; // Import NavLink
 import styles from "./Header.module.css"; // Import CSS module
 import logo from '../assets/logo-new.svg';
+import LoginModal from "../pages/Login";
 
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [showLoginModal, setShowLoginModal] = useState(false); // Login modal state
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -14,6 +16,15 @@ const Header = () => {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+
+  const openLoginModal = () => {
+    setShowLoginModal(true);
+  };
+
+  const closeLoginModal = () => {
+    setShowLoginModal(false);
   };
 
   useEffect(() => {
@@ -97,9 +108,15 @@ const Header = () => {
             )}
           </div>
 
-          <NavLink to="/login" className={styles["login-button"]} activeClassName={styles.active}>Log in</NavLink>
-        </nav> 
+          {/* 🔒 Login Button triggers modal */}
+          <button onClick={openLoginModal} className={styles["login-button"]}>
+            Log in
+          </button>
+        </nav>
       </div>
+
+      {/* 🔐 Login Modal shown on click */}
+      {showLoginModal && <LoginModal isOpen={showLoginModal} onClose={closeLoginModal} />}
     </header>
   );
 };

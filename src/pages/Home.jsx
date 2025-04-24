@@ -129,7 +129,7 @@ function Home() {
         <div className="content-container">
           <div className="main-title">
             <span><em></em></span>
-            <h2>Choose from the most popular restaurants in your neighborhood.</h2>
+            <h2>Choose from the most popular restaurants in<br/> your neighborhood.</h2>
             <p className="description">Order, enjoy and support your local heroes!.</p>
             <a href="/restaurants" className="link">All restaurants →</a>
           </div>

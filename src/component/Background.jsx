@@ -16,7 +16,7 @@ const Background = () => {
           />
           <button className={styles.searchBtn}>Search</button>
           <h3 className={styles.subheading}>Trending:- Pizza, Sushi, Burgher, Nudeln, Indisch, Thai uvm</h3>
-</div>
+      </div>
       </div>
 
       {/* Wave Animations */}

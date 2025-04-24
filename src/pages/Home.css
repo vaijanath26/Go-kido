@@ -149,9 +149,6 @@
   height: 20px;
 }
 
-
-
-
 /* Responsive Design */
 @media (max-width: 1024px) {
   .card { width: 180px; height: 240px; }
@@ -177,14 +174,14 @@
 }
 
 .main-title h2 {
-  font-size: 28px;
-  color: #166534;
-  
+  font-size: 30px;
+  color: #367337;
   font-weight: 700;
 }
 
 .main-title p {
   color: #9a92c2;
+  font-size: 20px;
   margin-top: 5px;
 }
 .main-title h3 {

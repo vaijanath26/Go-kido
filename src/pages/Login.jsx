@@ -3,6 +3,9 @@ import React from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+
 
 const LoginModal = ({ isOpen, onClose }) => {
   const navigate = useNavigate();
@@ -14,10 +17,10 @@ const LoginModal = ({ isOpen, onClose }) => {
     navigate("/signup"); // Navigate to signup page
   };
   return (
-    <div className="overlay">
+    <div className="overlay1">
       <div className="modal">
         <button className="close-btn" onClick={onClose}>
-          &times;
+        <FontAwesomeIcon icon={faXmark} />
         </button>
         <h2 className="modal-title">Log In</h2>
         <form className="login-form">
