@@ -1,7 +1,7 @@
 // LoginModal.jsx
 import React from "react";
 import "./Login.css";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const LoginModal = ({ isOpen, onClose }) => {

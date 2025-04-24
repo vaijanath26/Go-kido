@@ -16,8 +16,6 @@ const GoKidogoUI = () => {
       <div className="GoKidogoDescription">
         <h2>This is how Go Kidogo works!</h2>
         <p>It's very easy to order the food with minimal contact delivery.</p>
-        <h2>Order more!!</h2>
-        <p>To reduce waste... let's order more responsibly.</p>
       </div>
 
       {/* Right: Steps Section */}
@@ -56,6 +54,12 @@ const GoKidogoUI = () => {
           <div className="step">6</div>
           <img src={clean} alt="Clean Bowls" className="icon" />
           <p>Restaurants Clean Reusable Bowls</p>
+        </div>
+
+        {/* Order More Section */}
+        <div className="order">
+          <h2>Order more!!</h2>
+          <p>To reduce waste... let's order more responsibly.</p>
         </div>
       </div>
     </div>

@@ -8,7 +8,6 @@ import image from '../assets/Au.jpg'
 export default function About() {
   return (
           <>
-        
             <div className="background-image">
             <div className="text-content">
 
@@ -44,7 +43,7 @@ export default function About() {
       </div>
     </div>
    
-    <div className='other' style={{"margin-left": "18%"}}>
+    <div className='other' style={{"margin-left": "11%"}}>
           <h1 style={{ "color":"green"}}>Go Kidogo - Small steps, big changes.</h1>
           
           <p class="lead">The problem</p>

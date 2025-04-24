@@ -21,6 +21,7 @@ import PartnerDetailPage from './pages/PartnerDetailPage.jsx';
 
 
 
+
 // Create the router
 const router = createBrowserRouter(
   createRoutesFromElements(

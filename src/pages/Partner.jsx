@@ -94,6 +94,7 @@ const partners = [
     image: p4,
   },
   {
+    id: "5",
     name: "Sushi & Thai Royal",
     address: "Stresemannallee 8 60596 Frankfurt am Main",
     status: "closed",
@@ -102,6 +103,7 @@ const partners = [
     image: p5,
   },
   {
+    id: "6",
     name: "Singhs Indisches Restaurant",
     address: "Albrechtstraße 21 65185 Wiesbaden",
     status: "closed",
@@ -110,6 +112,7 @@ const partners = [
     image: p6,
   },
   {
+    id: "7",
     name: "Chopt Greens Wiesbaden",
     address: "Langgasse 42, 65183 Wiesbaden",
     status: "closed",
@@ -118,6 +121,7 @@ const partners = [
     image: p7,
   },
   {
+    id: "8",
     name: "Pizza22",
     address: "Viktoriastraße 22, 65189 Wiesbaden",
     status: "closed",
@@ -126,6 +130,7 @@ const partners = [
     image: p8,
   },
   {
+    id: "9",
     name: "Maryam Grill",
     address: "Dotzheimer Str. 118, 65197 Wiesbaden",
     status: "closed",
@@ -134,6 +139,7 @@ const partners = [
     image: p9,
   },
   {
+    id: "10",
     name: "MoschMosch",
     address: "Wilhelmstraße 52D, 65183 Wiesbaden",
     status: "closed",
@@ -142,6 +148,7 @@ const partners = [
     image: p10,
   },
   {
+    id: "11",
     name: "By Christianos",
     address: "Walter-Hallstein-Straße 5-7, 65197 Wiesbaden",
     status: "closed",
@@ -150,6 +157,7 @@ const partners = [
     image: p11,
   },
   {
+    id: "12",
     name: "Bella Italia",
     address: "Stiftstraße 14, 65183 Wiesbaden",
     status: "closed",
@@ -158,6 +166,7 @@ const partners = [
     image: p12,
   },
   {
+    id: "13",
     name: "Mr. Pizza",
     address: "Schiersteiner Str. 88, 65187 Wiesbaden",
     status: "closed",
@@ -166,6 +175,7 @@ const partners = [
     image: p13,
   },
   {
+    id: "14",
     name: "Oppenheimer Sushi Mainz",
     address: "Carl-Zeiss-Straße 44a, 55129 Mainz",
     status: "closed",
@@ -174,6 +184,7 @@ const partners = [
     image: p14,
   },
   {
+    id: "15",
     name: "Baba Burger",
     address: "Paradiesgasse 38, 60594 Frankfurt am Main",
     status: "closed",
@@ -182,6 +193,7 @@ const partners = [
     image: p15,
   },
   {
+    id: "16",
     name: "Darmstädter Schnitzelhaus",
     address: "Roßdörfer Str. 23, 64287 Darmstadt",
     status: "coming_soon",
@@ -190,6 +202,7 @@ const partners = [
     image: p16,
   },
   {
+    id: "17",
     name: "Babo Döner",
     address: "Heimstättensiedlung 83, 64295 Darmstadt",
     status: "closed",
@@ -198,6 +211,7 @@ const partners = [
     image: p17,
   },
   {
+    id: "18",
     name: "Kneipe 41",
     address: "Kahlertstraße 41, 64293 Darmstadt",
     status: "coming_soon",
@@ -206,6 +220,7 @@ const partners = [
     image: p18,
   },
   {
+    id: "19",
     name: "Shiraz",
     address: "Dieburger Str. 73, 64287 Darmstadt",
     status: "closed",
@@ -214,6 +229,7 @@ const partners = [
     image: p19,
   },
   {
+    id: "20",
     name: "My Pizza Darmstadt",
     address: "Kahlertstraße 49, 64293 Darmstadt",
     status: "closed",
@@ -222,6 +238,7 @@ const partners = [
     image: p20,
   },
   {
+    id: "21",
     name: "Fresh Thai Kitchen",
     address: "Otto-Röhm-Straße 82, 64293 Darmstadt",
     status: "closed",
@@ -230,6 +247,7 @@ const partners = [
     image: p21,
   },
   {
+    id: "22",
     name: "China Taxi Darmstadt",
     address: "Pallaswiesenstraße 150 A, 64293 Darmstadt",
     cuisine: ["Chinese"],
@@ -238,6 +256,7 @@ const partners = [
     image: p22, 
   },
   {
+    id: "23",
     name: "pizzaboy",
     address: "Im Tiefen See 1, 64293 Darmstadt",
     cuisine: ["Italian"],
@@ -246,6 +265,7 @@ const partners = [
     image: p23, 
   },
   {
+    id: "24",
     name: "Freddy Fresh Pizza Darmstadt",
     address: "Dieburger Str. 18, 64287 Darmstadt",
     cuisine: ["Italian"],
@@ -254,6 +274,7 @@ const partners = [
     image: p24, 
   },
   {
+    id: "25",
     name: "Santino's - Salat und mehr",
     address: "Schiffenberger Weg 12, 35394 Gießen",
     cuisine: ["Italian", "Continental"],
@@ -262,6 +283,7 @@ const partners = [
     image: p25, 
   },
   {
+    id: "26",
     name: "Burgerholic Best Burger In Town",
     address: "Hermannstraße 59, 64331 Weiterstadt",
     cuisine: ["Italian", "Mexican", "Continental"],
@@ -270,6 +292,7 @@ const partners = [
     image: p26, 
   },
   {
+    id: "27",
     name: "Burgerday",
     address: "Herborner Str. 2A, 35614 Aßlar",
     cuisine: ["Italian", "Mexican", "Continental"],
@@ -278,6 +301,7 @@ const partners = [
     image: p27, 
   },
   {
+    id: "28",
     name: "Indian Tandoori Restaurant",
     address: "Grieseler Str. 9, 35510 Butzbach",
     cuisine: ["Indian"],
@@ -286,6 +310,7 @@ const partners = [
     image: p28,
   },
   {
+    id: "29",
     name: "Toros Dönerhaus",
     address: "Hermannsteiner Str. 88, 35614 Aßlar",
     cuisine: [],
@@ -294,6 +319,7 @@ const partners = [
     image: p29,
   },
   {
+    id: "30",
     name: "Kiyan Kebaphaus",
     address: "Hermannsteiner Str. 8, 35614 Aßlar",
     cuisine: ["Continental"],
@@ -302,6 +328,7 @@ const partners = [
     image: p30,
   },
   {
+    id: "31",
     name: "Best Pizza Restaurant",
     address: "Nauborner Str. 142, 35578 Wetzlar",
     cuisine: ["Italian", "Continental"],
@@ -310,6 +337,7 @@ const partners = [
     image: p31,
   },
   {
+    id: "32",
     name: "And & Vin",
     address: "In den Kolonaden 21, 61169 Friedberg (Hessen)",
     cuisine: ["Italian"],
@@ -318,6 +346,7 @@ const partners = [
     image: p32,
   },
   {
+    id: "33",
     name: "Forno D'Oro I",
     address: "Homburger Landstraße 6660435 Frankfurt am Main",
     cuisine: [],
@@ -326,6 +355,7 @@ const partners = [
     image: p33,
   },
   {
+    id: "34",
     name: "Ganesha Tandoori Restaurant",
     address: "Im Prüfling 42, 60389 Frankfurt am Main",
     cuisine: ["Indisch", "Vegetarisch", "Fleisch"],
@@ -334,6 +364,7 @@ const partners = [
     image: p34,
   },
   {
+    id: "35",
     name: "Mini Asia",
     address: "Hauptstraße 31, 61231 Bad Nauheim",
     cuisine: ["Indisch", "Vegan", "Vegetarisch", "Fitness"],
@@ -342,6 +373,7 @@ const partners = [
     image: p35,
   },
   {
+    id: "36",
     name: "Al Rafa - Il Buon Palato",
     address: "Frankfurter Str. 47, 61169 Friedberg (Hessen)",
     cuisine: [],
@@ -350,6 +382,7 @@ const partners = [
     image: p36,
   },
   {
+    id: "37",
     name: "Eiscafé Venezia Bad Vilbel",
     address: "Frankfurter Str. 36, 61118 Bad Vilbel, Germany",
     cuisine: [],
@@ -358,6 +391,7 @@ const partners = [
     image: p37,
   },
   {
+    id: "38",
     name: "Nidda Sushi Bar",
     address: "Markt 26, 63667 Nidda",
     cuisine: ["Japanisch"],
@@ -366,6 +400,7 @@ const partners = [
     image: p38,
   },
   {
+    id: "39",
     name: "Restaurant Carls",
     address: "Hille Gastro Consulting GmbH Carl-Schurz-Straße 33",
     cuisine: [],
@@ -374,14 +409,16 @@ const partners = [
     image: p39,
   },
   {
+    id: "40",
     name: "Grüneburger Döner",
     address: "Grüneburgweg 21, 60322 Frankfurt am Main",
     image: p40,
     cuisine: ["Continental"],
     status: "Geschlossen",
-    services: ["Delivery"]
+    services: ["Delivery"],
   },
   {
+    id: "41",
     name: "Die Waffel",
     address: "Lotharstraße 24, 55116 Mainz",
     image: p41,
@@ -392,60 +429,67 @@ const partners = [
       "Orientalisch",
       "Arabisch",
       "Vegan",
-      "Fitness"
+      "Fitness",
     ],
     status: "Geschlossen",
-    services: ["Takeaway"]
+    services: ["Takeaway"],
   },
   {
+    id: "42",
     name: "TWOBROS",
     address: "Grüneburgweg 25, 60322 Frankfurt",
     image: p42,
     cuisine: ["Mexican", "Continental"],
     status: "coming soon",
-    services: ["Takeaway", "Delivery"]
+    services: ["Takeaway", "Delivery"],
   },
   {
+    id: "43",
     name: "Altstadt-Ofen Bad Vilbel",
     address: "Frankfurter Straße 5, 61118 Bad Vilbel",
     image: p43,
     cuisine: ["Italian"],
     status: "Geschlossen",
-    services: ["Takeaway"]
+    services: ["Takeaway"],
   },
   {
+    id: "44",
     name: "Konichi",
     address: "Konichi H&D Joint Venture GmbH, Bahnhofsplatz 7, 61118 Bad Vilbel",
     image: p44,
     cuisine: ["German"],
     status: "Geschlossen",
-    services: ["Delivery"]
+    services: ["Delivery"],
   },
   {
+    id: "45",
     name: "Metzgerei Lukarsch",
     address: "Marktplatz 4, 61118 Bad Vilbel",
     image: p45,
     cuisine: ["German", "Continental"],
     status: "Geschlossen",
-    services: ["Takeaway"]
+    services: ["Takeaway"],
   },
   {
+    id: "46",
     name: "Aki Gesa",
     address: "Homburger Straße 180, 61118 Bad Vilbel",
     image: p46,
     cuisine: [],
     status: "Geschlossen",
-    services: ["Takeaway"]
+    services: ["Takeaway"],
   },
   {
+    id: "47",
     name: "Pearl of India",
     address: "Frankfurter Str. 171, 61118 Bad Vilbel",
     image: p47,
     cuisine: [],
     status: "Geschlossen",
-    services: ["Takeaway"]
+    services: ["Takeaway"],
   },
   {
+    id: "48",
     name: "Bel Forno Pizza & Pasta",
     address: "Lautenschlägerstraße 23, 63450 Hanau",
     image: p48,
@@ -458,51 +502,56 @@ const partners = [
       "Vegetarisch",
       "Vegan",
       "Deutsche Küche",
-      "Burger"
+      "Burger",
     ],
     status: "Geschlossen",
-    services: ["Takeaway", "Delivery"]
+    services: ["Takeaway", "Delivery"],
   },
   {
+    id: "49",
     name: "Sushi Eschborn",
     address: "Rödelheimer Straße 59–61",
     image: p49,
     cuisine: ["Japanese"],
     status: "Geschlossen",
-    services: ["Takeaway", "Delivery"]
+    services: ["Takeaway", "Delivery"],
   },
   {
+    id: "50",
     name: "Sushi Ichi",
     address: "Saalburgstr. 16",
     image: p50,
     cuisine: ["Japanese"],
     status: "Geschlossen",
-    services: ["Takeaway"]
+    services: ["Takeaway"],
   },
   {
+    id: "51",
     name: "Sushi Love",
     address: "Mainzer Landstr. 73",
     image: p51,
     cuisine: ["Japanese"],
     status: "Geschlossen",
-    services: ["Takeaway", "Delivery"]
+    services: ["Takeaway", "Delivery"],
   },
   {
+    id: "52",
     name: "Sushi Palace",
     address: "Grempstr. 11",
     image: p52,
     cuisine: ["Japanese"],
     status: "Geschlossen",
-    services: ["Takeaway", "Delivery"]
+    services: ["Takeaway", "Delivery"],
   },
   {
+    id: "53",
     name: "Sushi Queen",
     address: "Bahnhofsplatz 1",
     image: p53,
     cuisine: ["Japanese"],
     status: "Geschlossen",
-    services: ["Takeaway"]
-  }
+    services: ["Takeaway"],
+  },
 ];
 
 export default function PartnerPage() {
