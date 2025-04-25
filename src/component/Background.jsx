@@ -14,7 +14,7 @@ const Background = () => {
             placeholder="Your Address or postal code"
             className={styles.inputField}
           />
-          <button className={styles.searchBtn}>Search</button>
+          <button className={styles.SearchBTN}>Search</button>
           <h3 className={styles.subheading}>Trending:- Pizza, Sushi, Burgher, Nudeln, Indisch, Thai uvm</h3>
       </div>
       </div>

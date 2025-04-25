@@ -17,7 +17,7 @@
    z-index: 2;
    margin-right: 600px;
 }
-button {
+.SearchBTN {
    padding: 10px 26px;
    font-size: 0.9rem;
    color: white;
