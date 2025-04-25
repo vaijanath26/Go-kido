@@ -20,7 +20,7 @@ export default function About() {
 
         <div className="split-section">
       <div className="split-text">
-        <h2 style={{color:"green"}}>#We Build Amazing Things</h2>
+        <h2 style={{color:"#367337"}}>#We Build Amazing Things</h2>
         <p>
         We all met in a programming class. Of course we wanted to program fun games. After the first 2-3 meetings we talked about plastic and the "FRIDAYS-FOR-FUTURE" demos. We all agreed that it is also imperative that individuals reconsider their consumption patterns. This also includes the use of technologies and service offers.
         </p>
@@ -44,9 +44,9 @@ export default function About() {
     </div>
    
     <div className='other' style={{"margin-left": "11%"}}>
-          <h1 style={{ "color":"green"}}>Go Kidogo - Small steps, big changes.</h1>
+          <h1 style={{ "color":"#367337"}}>Go Kidogo - Small steps, big changes.</h1>
           
-          <p class="lead">The problem</p>
+          <p class="lead"><h3 style={{color:"#777"}}>The problem</h3></p>
          
          <p>On average, one person produces 226.5 kilograms of packaging waste every year.
           <br/>
@@ -54,7 +54,7 @@ export default function About() {
          <br/>
          According to a Statista forecast, a total of 17.1 million people will use online food delivery services this year. By 2023, the number is expected to rise to 21.6 million.</p>
         
-        <p class="lead">Our approach</p>
+        <p class="lead"><h3 style={{color:"#777"}}>Our approach</h3></p>
          <p>We are sustainable and promote sustainability; Our restaurants deliver the food completely packaging-free.
           <br/>
          With our high-quality reusable packaging, we are declaring war on disposable packaging for take-away food. Go Kidogo stands for sustainable management and consumption. (Green Economy).
@@ -63,7 +63,7 @@ export default function About() {
          <br/>
          Go Kidogo supports its partners to become more sustainable and to reduce packaging waste and save costs. In addition, Go Kidogo offers its partners a completely fair and transparent price model.</p>
          
-         <p class="lead">Our approach</p>
+         <p class="lead"><h3 style={{color:"#777"}}>Our approach</h3></p>
          <p>
          With Go Kidogo, we have created an environmentally friendly and sustainable online delivery portal for ordering meals by using 
          <br/>
@@ -74,7 +74,7 @@ export default function About() {
          harmful substances.
          </p>
           
-          <p class="lead">Our guiding principles</p>
+          <p class="lead"><h3 style={{color:"#777"}}>Our guiding principles</h3></p>
          <p>according to the 17 Sustainable Development Goals (SDGs) of the United Nations:</p>
          <ul>
           <li>
@@ -94,19 +94,13 @@ export default function About() {
             </li>
          </ul>
 
-         <p class="lead">Our Team & Visions</p>
+         <p class="lead"><h3 style={{color:"#777"}}>Our Team & Visions</h3></p>
          <p>
          Rinku and are managing directors and shareholders of Go Kidogo. Luis is also a founder and heads the Network and Partnerships <br/>department. Employees of our company. Joel, Luisa, Nico, Vincent, Ami, Valerie and Vinay are the spiritual co-founders of Go Kidogo. <br/>Overall, we are an ambitious and passionate group of young people who want to encourage society to rethink consumption.<br/> Our mission is to make the world a more sustainable and fair place.
 
          </p>
     </div>
 
-
-
-   
-      
-   
-    
         </>
   );
 }
