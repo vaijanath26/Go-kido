@@ -3,7 +3,7 @@ import React from 'react'
 
 import './About.css';                // External CSS
 import AboutImage from '../assets/aboutbg.png';  // Local image import ✅
-import { color } from 'framer-motion';
+// import { color } from 'framer-motion';
 import image from '../assets/Au.jpg'
 export default function About() {
   return (
@@ -32,8 +32,9 @@ export default function About() {
        <p>The discussions were so moving and inspiring that our mentor suggested taking a small step towards a sustainable world together.</p>
        <br/> 
        
-      <p>Through a scrum session and other product discussions, we came up with the idea of ​​coding a sustainable delivery portal. Go Kidogo is therefore a good example of the fact that we not only have to rethink technologies for even more convenience, but especially in the present time for a just and sustainable world.</p>
+       <p>Through a scrum session and other product discussions, we came up with the idea of coding a sustainable delivery portal. Go Kidogo is therefore a good example of the fact that we not only have to rethink technologies for even more convenience, but especially in the present time for a just and sustainable world.</p>
        <br/>
+
        
        <p>At Go Kidogo, we value the essentials: quality of the food, fairness towards our restaurant partners and sustainable packaging.</p>
       

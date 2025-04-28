@@ -347,8 +347,9 @@ const Conditions = () => {
           If individual provisions of these general terms and conditions (or parts thereof) are ineffective, this does not affect the validity of the service contract between the customer and Go Kidogo or the contract between the restaurant and the customer.
           </li>
           <li>
-          These General Customer Conditions are written in several languages ​​and all versions are equally valid. In the event of any inconsistency or inconsistency between versions, the English version shall prevail.
+           These General Customer Conditions are written in several languages and all versions are equally valid. In the event of any inconsistency or inconsistency between versions, the English version shall prevail.
           </li>
+
           </ol>
       </section>
     </div>
