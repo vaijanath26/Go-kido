@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import LoginModal from './LoginModal'; // Replace with the correct path
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Restau_card from "./Restau_card"; // Importing your restaurant card component
+import PartnerDetailPage from "./PartnerDetailPage"; // Importing your detail page
 
 const App = () => {
-  const [showLogin, setShowLogin] = useState(false);
-
   return (
-    <>
-      <div>
-        <button onClick={() => setShowLogin(true)}>Log In</button>
-        <LoginModal isOpen={showLogin} onClose={() => setShowLogin(false)} />
-      </div>
-    </>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Restau_card} />
+        <Route path="/partner-detail/:restaurantName" component={PartnerDetailPage} />
+      </Switch>
+    </Router>
   );
 };
 

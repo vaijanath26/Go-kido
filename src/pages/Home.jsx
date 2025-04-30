@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import { useNavigate } from "react-router-dom";
 import pizza from "../assets/1.jpg";
 import sushi from "../assets/2.jpg";
 import curry from "../assets/3.jpg";
@@ -12,10 +13,9 @@ import vegan from "../assets/9.jpg";
 import halal from "../assets/10.jpg";
 import Background from "../component/Background";
 import "./Home.css";
-// import './home.css';
 import Restau_card from "../component/Restau_cards";
 import ProcessFlow from "../component/ProcessFlow";
-import Application from "../component/Application"
+import Application from "../component/Application";
 
 const cardData = [
   { imgSrc: pizza, title: "Pizza" },
@@ -33,6 +33,11 @@ const cardData = [
 function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCards, setVisibleCards] = useState(5);
+  const navigate = useNavigate();
+
+  const handleCardClick = (category) => {
+    navigate(`/partner?category=${category}`);
+  };
 
   useEffect(() => {
     const updateVisibleCards = () => {
@@ -95,8 +100,13 @@ function Home() {
               style={{ transform: `translateX(-${currentIndex * cardWidth}px)` }}
             >
               {cardData.map((item, index) => (
-                <div className="card" key={index}>
-                  <img src={item.imgSrc} alt={`Delicious ${item.title}`} className="card-image" loading="lazy" />
+                <div className="card" key={index} onClick={() => handleCardClick(item.title)}>
+                  <img
+                    src={item.imgSrc}
+                    alt={`Delicious ${item.title}`}
+                    className="card-image"
+                    loading="lazy"
+                  />
                   <div className="card-content">
                     <h3>{item.title}</h3>
                     <p>View All</p>
@@ -105,23 +115,14 @@ function Home() {
               ))}
             </div>
           </div>
-          {/* <button
+          <button
             className="arrow arrow-right"
             onClick={nextSlide}
             aria-label="Next Slide"
             disabled={currentIndex + visibleCards >= totalCards}
           >
             <ChevronRightIcon className="icon" />
-          </button> */}
-
-
-<button className="arrow arrow-left" onClick={prevSlide} disabled={currentIndex === 0}>
-  <ChevronLeftIcon className="icon" />
-</button>
-<button className="arrow arrow-right" onClick={nextSlide}>
-  <ChevronRightIcon className="icon" />
-</button>
-
+          </button>
         </div>
       </div>
 
@@ -129,14 +130,12 @@ function Home() {
         <div className="content-container">
           <div className="main-title">
             <span><em></em></span>
-            <h2>Choose from the most popular restaurants in<br/> your neighborhood.</h2>
-            <p className="description">Order, enjoy and support your local heroes!.</p>
+            <h2>Choose from the most popular restaurants in<br /> your neighborhood.</h2>
+            <p className="description">Order, enjoy and support your local heroes!</p>
             <a href="/restaurants" className="link">All restaurants →</a>
           </div>
 
-          
-            < Restau_card/>
-          
+          <Restau_card />
 
           <div className="banner">
             <div className="wrapper">
@@ -145,20 +144,14 @@ function Home() {
                 <h3>We Deliver to your Office</h3>
                 <p>Enjoy a tasty food in minutes!</p>
                 <a href="/restaurants" className="btn-1 gradient">Start Now!</a>
-                
               </div>
-              
             </div>
-            
           </div>
-          <ProcessFlow/>
-          <Application/>
-         
+
+          <ProcessFlow />
+          <Application />
         </div>
-       
-       
       </div>
-     
     </>
   );
 }

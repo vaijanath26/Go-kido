@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Restau.module.css"; // Correct way to import CSS module
 import { FaStar, FaArrowRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom"; 
 import asia from "../assets/images/11.jpg";
 import waffel from "../assets/images/12.jpg";
 import vin from "../assets/images/13.jpg";
@@ -304,21 +305,29 @@ const restaurants = [
 ];
 
 const Restau_card = () => {
+  const navigate = useNavigate(); // Hook for navigation
+
+  // Function to handle card click and navigate to partner details page
+  const handleCardClick = (restaurantName) => {
+    const encodedName = encodeURIComponent(restaurantName); // Encode restaurant name to prevent issues with spaces or special characters
+    navigate(`/partnerdetails/${encodedName}`); // Navigate to partner details page
+  };
+
   return (
     <div className={styles.container}>
-      {/* <h2 className={styles.title}>
-        Choose from the most popular restaurants <br/>in your neighborhood.
-      </h2>
-      <p className={styles.subtitle}>Order, enjoy and support your local heroes!</p>
-      <div className={styles.viewAll}>
-        <a href="/" className={styles.viewLink}>
-          All restaurants <FaArrowRight />
-        </a> */}
-      
       <div className={styles.restaurantGrid}>
         {restaurants.map((restaurant, index) => (
-          <div className={styles.restaurantCard} key={index}>
-            <img src={restaurant.img} alt={restaurant.name} className={styles.restaurantImg} />
+          <div
+            className={styles.restaurantCard}
+            key={index}
+            onClick={() => handleCardClick(restaurant.name)} // Make card clickable
+            style={{ cursor: "pointer" }}
+          >
+            <img
+              src={restaurant.img}
+              alt={restaurant.name}
+              className={styles.restaurantImg}
+            />
             <div className={styles.restaurantInfo}>
               <h3>{restaurant.name}</h3>
               <p className={styles.cuisine}>{restaurant.cuisine}</p>
@@ -333,7 +342,6 @@ const Restau_card = () => {
           </div>
         ))}
       </div>
-
     </div>
   );
 };

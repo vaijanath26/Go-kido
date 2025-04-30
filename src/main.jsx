@@ -53,6 +53,7 @@ const router = createBrowserRouter(
       <Route path="faq" element={<Faq />} />
       <Route path="privacy" element={<Privacy />} />
       <Route path="partner/:partnerId" element={<PartnerDetailPage />} />
+      
     </Route>
   )
 );
