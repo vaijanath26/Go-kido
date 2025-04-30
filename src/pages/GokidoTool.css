@@ -140,7 +140,7 @@ body {
 .terminal-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 25rem;
+  gap: 10rem;
   max-width: 1200px;
   align-items: center;
 }
