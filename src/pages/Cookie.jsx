@@ -1,13 +1,20 @@
 import React from "react";
 import "./Cookie.css";
-
+import "./styles.css";
 const Cookie = () => {
   return (
     <>
-    <div class="abcd">
+    <div className="abcd">
+    <div className="overlay"></div>
     <h1>Cookie</h1>
     </div>
     
+    <div className="wave-container1">
+      <div className="wave-element wave-1"></div>
+      <div className="wave-element wave-2"></div>
+      <div className="wave-element wave-3"></div>
+    </div>
+
     <div className="cookie-policy-container">
       <div className="cookie-section">
         <h4>Privacy Policy Cookie Statement</h4>

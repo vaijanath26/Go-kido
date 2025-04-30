@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./styles.css";
 
 import './About.css';                // External CSS
 import AboutImage from '../assets/aboutbg.png';  // Local image import ✅
@@ -12,6 +12,11 @@ export default function About() {
             <div className="text-content">
 
           </div>
+          <div className="wave-container1">
+      <div className="wave-element wave-1"></div>
+      <div className="wave-element wave-2"></div>
+      <div className="wave-element wave-3"></div>
+    </div>
           <div className="about-text">
           <h1>About-us</h1>
             <p>#We proTest:How we started!..</p>

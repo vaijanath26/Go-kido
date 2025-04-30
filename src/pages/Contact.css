@@ -1,6 +1,4 @@
 /* Contact Section Container */
-
-
 .background-image1 {
     background: url('../assets/contactus.jpg') no-repeat center center/cover;
     height: 500px;
@@ -13,9 +11,6 @@
     font-weight: bold;
     /* filter: brightness(80%); */
   }
-
-
-
 
 .contact-section {
     background-color: #f7f7f7;
@@ -58,7 +53,7 @@
   /* Contact Title */
   .contact-title {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     color: #2f855a;
     margin-bottom: 10px;
   }
@@ -77,16 +72,17 @@
     }
   }
   .about-text {
-    font-size: 30px;
-    font-family: 'Times New Roman', serif;
+    font-size: 25px;
+    font-family: "Poppins", Helvetica, sans-serif;
+    color: #fff;
   }
   
   .about-text h2 {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
   }
   
   .about-text p {
-    margin-top: 1rem;
+    margin-top: -1.0rem;
     color: #fff;
     text-align: center;
   }

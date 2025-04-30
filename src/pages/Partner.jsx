@@ -54,6 +54,7 @@ import p50 from "../assets/images/p50.png";
 import p51 from "../assets/images/p51.png";
 import p52 from "../assets/images/p52.png";
 import p53 from "../assets/images/p53.png";
+import "./styles.css";
 
 
 const partners = [
@@ -567,7 +568,11 @@ export default function PartnerPage() {
       <div className="abc">
         <h1>53 Partner</h1>
       </div>
-    
+      <div className="wave-container1">
+      <div className="wave-element wave-1"></div>
+      <div className="wave-element wave-2"></div>
+      <div className="wave-element wave-3"></div>
+    </div>
       <div className="partner-wrapper">
         <div className="partner-filters">
           {["All", "Delivery", "Takeaway"].map((opt) => (

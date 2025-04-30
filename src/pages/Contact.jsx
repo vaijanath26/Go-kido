@@ -2,6 +2,7 @@ import React from "react";
 import { FaLifeRing, FaMapMarkerAlt, FaCloudUploadAlt } from "react-icons/fa";
 import "./Contact.css"; 
 import ContactForm from "./ContactForm";
+import "./styles.css";
 
 const ContactSection = () => {
   const contactInfo = [
@@ -33,9 +34,12 @@ const ContactSection = () => {
       {/* Background Image Section */}
       <div className="background-image1">
         
-      <div className="text-content">
-
-</div>
+      <div className="text-content"></div>
+<div className="wave-container1">
+      <div className="wave-element wave-1"></div>
+      <div className="wave-element wave-2"></div>
+      <div className="wave-element wave-3"></div>
+    </div>
 <div className="about-text">
 <h1>Contact Us</h1>
   <p>Connect with us</p>

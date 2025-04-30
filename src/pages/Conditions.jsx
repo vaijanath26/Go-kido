@@ -1,11 +1,19 @@
 import React from "react";
 import "./Conditions.css"; // Link to the CSS file
+import "./styles.css";
 
 const Conditions = () => {
   return (
     <>
-    <div class="abcd">
+    <div className="abcd">
+    <div className="overlay"></div>
     <h1>GENERAL TERMS AND CONDITIONS FOR<br/> ORDER PLATFORM</h1>
+    </div>
+
+    <div className="wave-container1">
+      <div className="wave-element wave-1"></div>
+      <div className="wave-element wave-2"></div>
+      <div className="wave-element wave-3"></div>
     </div>
 
     <div className="terms-container">

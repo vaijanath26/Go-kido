@@ -1,5 +1,7 @@
 import React from "react";
 import "./Faq.css"; // global styling
+import "./styles.css";
+
 
 const faqsGeneral = [
   {
@@ -221,14 +223,19 @@ const faqsRestaurant = [
 const FAQ = () => {
   return (
     <>
-   <div class="abcd">
+   <div className="abcd">
+   <div className="overlay"></div>
   <h1>
     Here's how<br />
     <span class="second-line">Your questions, our answers...</span>
   </h1>
 </div>
 
-
+<div className="wave-container1">
+      <div className="wave-element wave-1"></div>
+      <div className="wave-element wave-2"></div>
+      <div className="wave-element wave-3"></div>
+    </div>
 
 
     <div className="faq-container">

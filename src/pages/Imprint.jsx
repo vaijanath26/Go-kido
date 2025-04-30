@@ -1,5 +1,6 @@
 import React from "react";
 import "./Imprint.css";
+import "./styles.css";
 
 const Imprint = () => {
   return (
@@ -9,6 +10,11 @@ const Imprint = () => {
         <h1>Imprint</h1>
       </div>
       
+      <div className="wave-container1">
+      <div className="wave-element wave-1"></div>
+      <div className="wave-element wave-2"></div>
+      <div className="wave-element wave-3"></div>
+    </div>
 
       <div className="imprint-container">
         <div className="imprint-section">
