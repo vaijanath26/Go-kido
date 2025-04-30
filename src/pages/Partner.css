@@ -137,7 +137,7 @@
   
   .partner-card {
     width: 370px;
-    border-radius: 12px;
+    border-radius: 5px;
     overflow: hidden;
     background-color: white;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
