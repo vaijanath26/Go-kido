@@ -14,7 +14,6 @@
 
 .title {
   color: #278d05;
- 
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -217,10 +216,11 @@
   align-items: center;
   padding: 40px 20px;
   color: #ffffff;
+
 }
 
 .btn-1 {
-  background-color: #22c55e;
+  background: linear-gradient(to right, #bee25a, #357135);
   color: #ffffff;
   border: none;
   border-radius: 6px;
@@ -231,7 +231,7 @@
 }
 
 .btn-1:hover {
-  background-color: #ffffffe0;
+  filter: brightness(1.1);
 }
 
 @media (max-width: 768px) {
@@ -240,3 +240,9 @@
   .btn-1 { padding: 6px 15px; }
 }
 
+.overlay1 {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}

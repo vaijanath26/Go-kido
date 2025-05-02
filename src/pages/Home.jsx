@@ -139,10 +139,11 @@ function Home() {
 
           <div className="banner">
             <div className="wrapper">
+            <div className="overlay1"></div>
               <div>
-                <small>GokidoGo Delivery</small>
-                <h3>We Deliver to your Office</h3>
-                <p>Enjoy a tasty food in minutes!</p>
+                <medium>GokidoGo Delivery</medium>
+                <h1>We Deliver to your Office</h1>
+                <h2>Enjoy a tasty food in minutes!</h2><br/>
                 <a href="/restaurants" className="btn-1 gradient">Start Now!</a>
               </div>
             </div>

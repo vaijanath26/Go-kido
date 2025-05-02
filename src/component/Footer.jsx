@@ -15,6 +15,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
+    
         <div className="footer-section">
           <h3>QUICK LINKS</h3>
           <ul>

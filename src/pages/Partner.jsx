@@ -566,6 +566,7 @@ export default function PartnerPage() {
   return (
     <>
       <div className="abc">
+      <div className="overlay"></div>
         <h1>53 Partner</h1>
       </div>
       <div className="wave-container1">

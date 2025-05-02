@@ -11,6 +11,15 @@
     filter: brightness(70%); 
 }
 
+.abc h1 {
+  position: relative;
+  z-index: 2;
+  font-size: 3.0rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
 .partner-wrapper {
     font-family: 'Segoe UI', sans-serif;
     padding: 30px;
