@@ -202,7 +202,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 320px;
+  height: 370px;
   width: 100%;
   background-image: url("../assets/banner_bg_desktop.jpg");
   
@@ -223,7 +223,7 @@
   background: linear-gradient(to right, #bee25a, #357135);
   color: #ffffff;
   border: none;
-  border-radius: 6px;
+  border-radius: 3px;
   padding: 8px 20px;
   cursor: pointer;
   transition: background 0.3s ease;

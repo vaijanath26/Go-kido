@@ -1,9 +1,7 @@
 import React from 'react'
 import "./styles.css";
 
-import './About.css';                // External CSS
-import AboutImage from '../assets/aboutbg.png';  // Local image import ✅
-// import { color } from 'framer-motion';
+import './About.css';               
 import image from '../assets/Au.jpg'
 export default function About() {
   return (

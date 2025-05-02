@@ -138,6 +138,7 @@ function Home() {
           <Restau_card />
 
           <div className="banner">
+          <div className="overlay"></div>
             <div className="wrapper">
               <div>
                 <medium>GokidoGo Delivery</medium>
