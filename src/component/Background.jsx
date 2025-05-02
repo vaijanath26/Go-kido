@@ -27,7 +27,7 @@ const Background = () => {
     if (charIndex < currentPhrase.length) {
       const timeout = setTimeout(() => {
         setDisplayText((prev) => prev + currentPhrase[charIndex]);
-        setCharIndex(charIndex + 1);
+        setCharIndex((prev) => prev + 1);
       }, 100);
       return () => clearTimeout(timeout);
     } else {
@@ -45,7 +45,6 @@ const Background = () => {
       <div className={styles.content}>
         <p className={styles.para}>Delivery or Takeaway Food</p>
 
-        {/* Typewriter effect in subheading */}
         <h2 className={`${styles.subheading} ${styles.typewriter}`}>
           {displayText}
         </h2>
@@ -61,11 +60,11 @@ const Background = () => {
           <button className={styles.SearchBTN} onClick={handleSearch}>
             Search
           </button>
-
-          <h4 className={styles.subheading}>
-            Trending:- Pizza, Sushi, Burgher, Nudeln, Indisch, Thai uvm
-          </h4>
         </div>
+
+        <h4 className={styles.subheading}>
+          Trending:- Pizza, Sushi, Burgher, Nudeln, Indisch, Thai uvm
+        </h4>
       </div>
 
       <div className={styles['wave-container']}>
