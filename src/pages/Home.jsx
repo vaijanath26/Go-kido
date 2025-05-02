@@ -139,7 +139,6 @@ function Home() {
 
           <div className="banner">
             <div className="wrapper">
-            <div className="overlay1"></div>
               <div>
                 <medium>GokidoGo Delivery</medium>
                 <h1>We Deliver to your Office</h1>
