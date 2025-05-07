@@ -1,17 +1,22 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Restau_card from "./Restau_card"; // Importing your restaurant card component
-import PartnerDetailPage from "./PartnerDetailPage"; // Importing your detail page
+import React from 'react'
+import SignupPage from './pages/SignupPage';
+import Signup from "./pages/SignupPage";
 
 const App = () => {
-  return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Restau_card} />
-        <Route path="/partner-detail/:restaurantName" component={PartnerDetailPage} />
-      </Switch>
-    </Router>
-  );
-};
 
-export default App;
+  const [showSignup, setShowSignup] = useState(false);
+  return (
+    <>
+        <div>
+      <button onClick={() => setShowLogin(true)}>Log In</button>
+      <LoginModal isOpen={showLogin} onClose={() => setShowLogin(false)} />
+    </div>
+    
+    
+    
+    
+    </>
+  )
+}
+
+export default App

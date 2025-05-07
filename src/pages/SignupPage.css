@@ -9,6 +9,7 @@
   padding: 40px;
   background-color: #f9f9f9;
   overflow-y: auto;
+  text-align: left;
 }
 
 .image-section {
@@ -50,7 +51,7 @@ input, select {
   margin-right: 10px;
 }
 
-button {
+.button {
   background-color: #7cc14f;
   color: white;
   padding: 12px;

@@ -1,9 +1,7 @@
 /* App Download Section */
-
-
 .app-download {
     text-align: center;
-    padding: 50px 0;
+    padding: 100px 0;
     background-color: #f4f7f6; 
     margin-top: 50px; 
 }
@@ -11,9 +9,9 @@
 /* Heading Styling */
 .app-download h2 {
     color: #367337;
-    font-size: 26px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 50px;
 }
 
 /* Buttons Wrapper */
@@ -21,12 +19,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px; /* Space between buttons */
+    gap: 400px; /* Space between buttons */
 }
 
 /* Button Images */
 .app-buttons img {
-    width: 350px; /* Adjust size for button images */
+    width: 310px; /* Adjust size for button images */
     height: auto;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
